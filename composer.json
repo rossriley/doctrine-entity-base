@@ -1,0 +1,26 @@
+{
+    "name": "rossriley/doctrine-entity-base",
+    "description": "Single class package to provide base getter/setter functions for Doctrine Entities",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ross Riley",
+            "email": "riley.ross@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        
+    },
+    
+    "autoload": {
+        "psr-4": {
+            "Doctrine\\Entity\\": "src",
+            "Doctrine\\Entity\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": { "dev-master": "1.0-dev" }
+    }
+    
+}
