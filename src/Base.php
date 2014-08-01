@@ -15,13 +15,13 @@ abstract class Base
 
     public function __get($key)
     {
-        $method = "get".$key;
+        $method = "get".ucfirst($key);
         if(property_exists($this, $key)) {return $this->$method();}
     }
 
     public function __set($key, $value)
     {
-        $method = "set".$key;
+        $method = "set".ucfirst($key);
         if(property_exists($this, $key)) $this->$method($value);
     }
 
