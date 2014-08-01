@@ -16,7 +16,7 @@ abstract class Base
     public function __get($key)
     {
         $method = "get".$key;
-        if(property_exists($this, $key)) {return $this->$method;}
+        if(property_exists($this, $key)) {return $this->$method();}
     }
 
     public function __set($key, $value)
