@@ -11,7 +11,7 @@ Create your entity class and simply extend this base class. For example:
 
 namespace Myproject;
 
-use Doctrin\Entity\Base;
+use Doctrine\Entity\Base;
 
 class Myentity extends Base
 {
@@ -79,7 +79,7 @@ These will always be used ahead of the fallback behaviour.
 
 namespace Myproject;
 
-use Doctrin\Entity\Base;
+use Doctrine\Entity\Base;
 
 class Myentity extends Base
 {
