@@ -2,7 +2,9 @@
 
 namespace Doctrine\Entity;
 
-abstract class Base
+use JsonSerializable;
+
+abstract class Base implements JsonSerializable
 {
 
     public function __construct($data = [])
@@ -67,6 +69,11 @@ abstract class Base
             $data[$k] = $this->$method();
         }
         return $data;
+    }
+    
+    public function jsonSerialize()
+    {
+        return $this->serialize();
     }
 
 }
